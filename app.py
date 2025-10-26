@@ -20,7 +20,7 @@ from typing import Dict, List, Tuple, Set
 
 import streamlit as st
 
-st.set_page_config(page_title="Inverted Index (Streamlit)", page_icon="📚", layout="wide")
+st.set_page_config(page_title="Inverted Index - Firman Jabar", page_icon="📚", layout="wide")
 
 # -------------------- Built-in Stopwords (small, EN & ID) --------------------
 STOPWORDS_EN = {
@@ -162,7 +162,7 @@ def highlight_snippet(text: str, terms: List[str], radius: int = 40) -> str:
     return pattern.sub(r"**\1**", snippet) + ("..." if end < len(text) else "")
 
 # -------------------- UI --------------------
-st.title("📚 Inverted Index — Streamlit App")
+st.title("📚 Inverted Index WebApp")
 
 st.markdown(
     """
